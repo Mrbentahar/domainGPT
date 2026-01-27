@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> بن الطاهر محمد | وسيط ومدرب النطاقات | ArabDomainAcademy.com</title>
+    <title>بن طاهر محمد | خبير استثمار النطاقات والوساطة</title>
     <!-- Using Tailwind CSS CDN as per original code -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Cairo Font for high-quality Arabic display -->
@@ -11,22 +11,8 @@
     <style>
         /* Maintain Cairo font and smooth scrolling */
         body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
-        /* Solid dark background for the Hero section, matching the image's deep navy */
+        /* Solid dark background for the Hero section, matching the desired aesthetic */
         .hero-bg { background-color: #1e293b; /* Equivalent to slate-800 */ }
-        /* Simulate the graphic element in the image */
-        .graphic-placeholder { 
-            background: #3b82f6; /* A distinct blue for the circle */
-            border-radius: 50%;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            max-width: 400px;
-            margin-inline-start: auto; /* Align to the left (start in LTR, left in RTL) */
-        }
         /* Style for card hover - subtle lift */
         .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .card-hover:hover { 
@@ -41,7 +27,7 @@
         <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-20">
-                    <!-- Logo & Brand Name: Using the new orange accent -->
+                    <!-- Logo & Brand Name: Using the orange accent -->
                     <a href="#" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
                         <div class="w-10 h-10 bg-orange-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-orange-200">
                             <!-- Icon represents value/graph -->
@@ -64,17 +50,17 @@
         </nav>
 
         <main id="main-content">
-            <!-- HERO SECTION: Two-Column Personal Branding Style (Matching Image) -->
+            <!-- HERO SECTION: Two-Column Personal Branding Style with Success Graphic -->
             <section class="pt-40 pb-20 px-4 hero-bg text-white">
                 <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                     
                     <!-- Text Column (RTL: Right) -->
                     <div class="order-2 md:order-1 text-right md:text-right space-y-6">
                         <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
-                            أنا أيوب كحل
+                            أنا بن طاهر محمد
                         </h1>
                         <h2 class="text-xl md:text-2xl font-semibold text-orange-400">
-                            مستثمر نطاقات | مدرب نطاقات | مؤسس <span dir="ltr" class="inline-block">ArabDomainAcademy.com</span>
+                            خبير استراتيجي في النطاقات | وسيط معتمد | مستشار استثمار رقمي
                         </h2>
                         <p class="text-lg text-slate-300 max-w-xl md:max-w-none leading-relaxed">
                             أساعد رواد الأعمال والمستثمرين والشركات على اكتشاف القيمة الحقيقية لأسماء النطاقات. بخبرة سنوات في استثمار وبيع النطاقات والتسويق الرقمي، أتخصص في تحديد الأصول الرقمية عالية القيمة وتحويلها إلى فرص ربح.
@@ -83,22 +69,25 @@
                             مُلتزم بتثقيف السوق العربي وبناء نظام بيئي احترافي حول النطاقات وتقييمها وعمليات الاستحواذ الاستراتيجية.
                         </p>
 
-                        <!-- CTA Button: Bold Orange, matching image -->
+                        <!-- CTA Button: Bold Orange, referring to the appointment -->
                         <a href="#contact" class="inline-block mt-8 px-10 py-4 bg-orange-600 text-white rounded-xl font-bold text-lg hover:bg-orange-700 transition-all shadow-xl shadow-orange-900/50">
                             احجز موعد استشارة
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block mr-2 -ml-2 transform rotate-45"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                         </a>
                     </div>
 
-                    <!-- Image Column (RTL: Left) -->
+                    <!-- SUCCESS/GROWTH Graphic Column (RTL: Left) -->
                     <div class="order-1 md:order-2 flex justify-center md:justify-start min-h-[350px]">
-                        <!-- This is a placeholder for the image/graphic to maintain structure -->
                         <div class="relative w-full max-w-sm h-full flex items-center justify-center">
-                            <!-- Simulated Graphic Element -->
-                            <div class="graphic-placeholder">
-                                <!-- Placeholder for image, replace 'user-image.png' with the actual image path -->
-                                <img src="/path/to/your/user-image.png" alt="صورة أيوب كحل" class="w-full h-full object-cover relative z-10 rounded-full" style="clip-path: circle(50% at 50% 50%);">
-                                <!-- Add the diagonal lines if needed with more custom CSS -->
+                            <!-- Success/Growth Graphic (Stylized Chart and Star/Trophy) -->
+                            <div class="p-8 bg-slate-700/50 rounded-3xl w-full h-full flex flex-col items-center justify-center space-y-4 shadow-2xl shadow-black/50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500">
+                                    <polyline points="22 12 16 12 14 6 10 18 8 12 2 12"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="#f97316" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                                </svg>
+                                <p class="text-xl font-bold text-white mt-4">نحو أعلى مستويات الأداء</p>
                             </div>
                         </div>
                     </div>
@@ -106,7 +95,7 @@
                 </div>
             </section>
 
-            <!-- VALUE PROPOSITION / FEATURES: Brokerage Specifics (Updated Colors) -->
+            <!-- VALUE PROPOSITION / FEATURES: Brokerage Specifics -->
             <section id="services" class="py-24 max-w-7xl mx-auto px-4">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-extrabold mb-4">خدمات النطاقات المتكاملة</h2>
@@ -135,7 +124,7 @@
                 </div>
             </section>
 
-            <!-- MARKETPLACE/PORTFOLIO SECTION: Showcase Listings (Updated Colors) -->
+            <!-- MARKETPLACE/PORTFOLIO SECTION: Showcase Listings -->
             <section id="marketplace" class="py-24 bg-slate-800 text-white rounded-[3rem] mx-4 mb-24 overflow-hidden">
                 <div class="max-w-7xl mx-auto px-8">
                     <div class="text-center mb-16">
@@ -143,7 +132,7 @@
                         <p class="text-slate-400 text-lg">أفضل فرص الاستثمار الرقمي التي تم تقييمها والتحقق منها من قبل فريقنا.</p>
                     </div>
                     <div class="grid md:grid-cols-3 gap-8">
-                        <!-- Domain Card 1: Updated Accent Colors -->
+                        <!-- Domain Card 1: Investment Focus -->
                         <div class="bg-white p-6 rounded-3xl card-hover border border-slate-700 hover:border-orange-500 text-slate-900">
                             <div class="flex justify-between items-start mb-4">
                                 <span class="bg-yellow-400 text-slate-900 font-bold px-3 py-1 rounded-full text-sm">فرصة استثمار</span>
@@ -191,11 +180,11 @@
                 </div>
             </section>
             
-            <!-- CONTACT SECTION (Updated Colors) -->
+            <!-- CONTACT SECTION -->
             <section id="contact" class="pb-24 px-4 max-w-4xl mx-auto">
                 <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-orange-100 border border-slate-100">
                     <div class="text-center mb-10">
-                        <h2 class="text-3xl font-bold mb-2">احجز استشارة شخصية مع أيوب كحل</h2>
+                        <h2 class="text-3xl font-bold mb-2">احجز استشارة شخصية مع بن طاهر محمد</h2>
                         <p class="text-slate-500">املأ النموذج، وسنتواصل معك لترتيب موعدك.</p>
                     </div>
                     <form id="contact-form" class="space-y-6" onsubmit="handleContact(event)">
@@ -233,10 +222,10 @@
 
         </main>
 
-        <!-- FOOTER - Minimal and Clean -->
+        <!-- FOOTER -->
         <footer class="bg-slate-50 py-12 border-t border-slate-200">
             <div class="max-w-7xl mx-auto px-4 text-center">
-                <p class="text-slate-600 font-medium">© 2026 جميع الحقوق محفوظة لـ <span class="font-bold">بن الطاهر محمد </span></p>
+                <p class="text-slate-600 font-medium">© 2026 جميع الحقوق محفوظة لـ <span class="font-bold">بن طاهر محمد</span></p>
             </div>
         </footer>
     </div>
