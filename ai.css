@@ -1,0 +1,405 @@
+/* ------------------------------------ */
+/* 1. المتغيرات والأكواد العامة (CSS Variables & Global) */
+/* ------------------------------------ */
+
+:root {
+    /* الألوان الأساسية */
+    --color-primary: #1B5E20;   /* الأخضر الأساسي (الداكن) */
+    --color-secondary: #A5D6A7; /* الأخضر الفاتح (لخلفية Hero) */
+    --color-accent: #FFC107;    /* الأصفر/البرتقالي للتمييز */
+    --color-text-dark: #37474F; /* لون النصوص الداكن */
+    --color-text-light: #f9f9f9;/* لون النصوص الفاتح */
+    --color-background: #FFFFFF;/* الخلفية الأساسية */
+    --color-light-gray: #f9f9f9;/* الخلفية الرمادية الفاتحة */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', Tahoma, sans-serif;
+    background: var(--color-background);
+    color: var(--color-text-dark);
+    direction: rtl; /* ضمان الاتجاه من اليمين لليسار */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ------------------------------------ */
+/* 2. الأزرار (Buttons) */
+/* ------------------------------------ */
+
+.btn-primary, .btn-cta {
+    display: inline-block;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    text-decoration: none; /* للأزرار التي هي روابط */
+    text-align: center;
+}
+
+.btn-primary:hover, .btn-cta:hover {
+    background-color: #2E7D32; /* ظل أغمق للأخضر */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(27, 94, 32, 0.3);
+}
+
+.btn-cta {
+    font-size: 1.25rem;
+    padding: 15px 40px;
+    border-radius: 12px;
+}
+
+/* ------------------------------------ */
+/* 3. شريط التنقل (Navigation) */
+/* ------------------------------------ */
+
+.navbar {
+    background-color: var(--color-background);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--color-primary);
+}
+
+.tagline {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--color-text-dark);
+}
+
+.nav-links a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 25px; /* RTL: مسافة على اليسار */
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+.nav-links .btn-primary {
+    margin-left: 0; /* لا مسافة للزر */
+}
+
+/* ------------------------------------ */
+/* 4. قسم البطل (Hero Section) */
+/* ------------------------------------ */
+
+.hero-section {
+    background: var(--color-secondary); /* الأخضر الفاتح */
+    padding: 100px 0 100px 0;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+    line-height: 1.3;
+}
+
+.hero-title .highlight {
+    color: var(--color-text-dark); /* تغيير لون الجزء المميز */
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-dark);
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.hero-visual {
+    font-size: 6rem;
+    margin-top: 40px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+/* ------------------------------------ */
+/* 5. العناوين المشتركة (Shared Titles) */
+/* ------------------------------------ */
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--color-text-dark);
+}
+
+/* ------------------------------------ */
+/* 6. قسم المشكلة (Pain Section) */
+/* ------------------------------------ */
+
+.pain-section {
+    padding: 80px 0;
+    background-color: var(--color-light-gray);
+}
+
+.pain-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--color-background);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pain-card .icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.pain-card h3 {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.pain-card p {
+    color: #607D8B;
+}
+
+/* ------------------------------------ */
+/* 7. قسم الحل (Solution Section) */
+/* ------------------------------------ */
+
+.solution-section {
+    padding: 80px 0;
+    background-color: var(--color-primary); /* خلفية خضراء داكنة */
+    color: var(--color-text-light);
+}
+
+.solution-section .section-title {
+    color: var(--color-text-light);
+}
+
+.solution-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.solution-card {
+    background: rgba(255, 255, 255, 0.1); /* شفافية بيضاء على الأخضر */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.solution-card h3 {
+    color: var(--color-accent);
+}
+
+.solution-card p {
+    color: var(--color-light-gray);
+}
+
+.solution-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ------------------------------------ */
+/* 8. قسم الخطوات (Steps Section) */
+/* ------------------------------------ */
+
+.steps-section {
+    padding: 80px 0;
+}
+
+.steps-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap; /* للسماح بالالتفاف في الشاشات الصغيرة */
+}
+
+.step-item {
+    flex-basis: 250px;
+    padding: 20px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 15px;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 50%;
+    line-height: 50px;
+    margin: 0 auto 15px auto;
+}
+
+.step-item h3 {
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}
+
+.flow-arrow {
+    font-size: 2rem;
+    color: var(--color-accent);
+    transform: rotate(180deg); /* تدوير السهم ليناسب RTL */
+    font-weight: 900;
+    display: none; /* إخفاء في الشاشات الصغيرة جداً */
+}
+
+/* ------------------------------------ */
+/* 9. قسم الـ CTA النهائي (Final CTA) */
+/* ------------------------------------ */
+
+.final-cta-section {
+    background-color: var(--color-primary);
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+}
+
+.final-cta-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.final-cta-subtitle {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.final-btn {
+    background: var(--color-accent); /* زر CTA بلون مختلف لإبرازه */
+    color: var(--color-text-dark);
+}
+
+.final-btn:hover {
+    background-color: #FFD740;
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+/* ------------------------------------ */
+/* 10. التذييل (Footer) */
+/* ------------------------------------ */
+
+.footer {
+    background-color: #37474F; /* رمادي داكن */
+    color: var(--color-light-gray);
+    padding: 30px 0;
+    font-size: 0.9rem;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer .tagline {
+    color: var(--color-accent);
+}
+
+/* ------------------------------------ */
+/* 11. الاستجابة (Responsiveness / Media Queries) */
+/* ------------------------------------ */
+
+@media (min-width: 768px) {
+    .flow-arrow {
+        display: block; /* إظهار السهم في الشاشات المتوسطة والكبيرة */
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+    }
+    
+    .nav-links {
+        display: none; /* إخفاء الروابط في الشاشات الصغيرة لتبسيط العرض */
+    }
+
+    .pain-cards, .solution-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .steps-flow {
+        flex-direction: column;
+    }
+    
+    .flow-arrow {
+        transform: rotate(90deg); /* تدوير السهم ليصبح عموديًا */
+        margin: 10px 0;
+    }
+}
