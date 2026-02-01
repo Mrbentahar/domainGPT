@@ -3,302 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بن طاهر محمد | خبير استثمار النطاقات والوساطة</title>
-    <!-- Using Tailwind CSS CDN as per original code -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Cairo Font for high-quality Arabic display -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght=300;400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        /* Maintain Cairo font and smooth scrolling */
-        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
-        /* Deep Forest Green for the Hero (main brand color in video) */
-        .hero-bg { background-color: #1e594d; /* Custom deep green */ }
-        /* Red Top Bar for promotions/announcements */
-        .promo-bar-bg { background-color: #dc2626; /* Equivalent to red-600 */ }
-        /* Style for card hover - subtle lift */
-        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .card-hover:hover { 
-            transform: translateY(-5px); 
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); 
-        }
-        /* Custom Orange accent color (Matching the video's secondary CTA/accent) */
-        .text-accent-orange { color: #f97316; } /* Equivalent to orange-600 */
-    </style>
-</head>
-<body class="bg-white text-slate-900">
-    <div id="app" class="min-h-screen">
-
-        <!-- PROMOTIONAL TOP BAR (Matches the red bar in the video) -->
-        <div class="promo-bar-bg text-white text-center py-2 text-sm font-medium relative z-50">
-            خصم ٤٠٪ على جميع خدمات الوساطة - متاح لـ ٣ عملاء فقط!
-            <a href="#contact" class="inline-block bg-white text-red-600 px-4 py-1.5 rounded-full font-bold text-xs mr-4 hover:bg-red-50 transition-colors">
-                انتهز الفرصة
-            </a>
-        </div>
-
-        <!-- HEADER/NAVBAR - Clean and Professional -->
-        <nav class="sticky top-10 w-full z-40 bg-white/95 backdrop-blur-md border-b border-slate-100">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between h-20">
-                    <!-- Logo & Brand Name: Using the new orange accent -->
-                    <a href="#" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-                        <div class="w-10 h-10 bg-orange-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-orange-200">
-                            <!-- Icon represents value/graph -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
-                        </div>
-                        <span class="font-extrabold text-2xl tracking-tight text-slate-900">وسيط النطاق</span>
-                    </a>
-
-                    <!-- NAVIGATION LINKS: UPDATED WITH LANGUAGE SWITCHER -->
-                    <div class="hidden md:flex items-center gap-8 text-slate-900 font-medium">
-                        <a href="#" class="hover:text-orange-600 transition-colors">الرئيسية</a>
-                        <a href="#marketplace" class="hover:text-orange-600 transition-colors">محفظة النطاقات</a>
-                        <a href="#testimonials" class="hover:text-orange-600 transition-colors">آراء العملاء</a>
-                        <a href="#contact" class="hover:text-orange-600 transition-colors">تواصل معنا</a>
-                        <!-- LANGUAGE SWITCHER: Links to the English version (en.html) -->
-                        <a href="en.html" class="border border-slate-300 px-4 py-2 rounded-lg hover:border-orange-600 transition-colors font-bold">
-                            English
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <main id="main-content">
-            <!-- HERO SECTION: Full-width Deep Green Hero (Matching Video) -->
-            <section class="pt-24 pb-20 px-4 hero-bg text-white">
-                <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-                    
-                    <!-- Text Column (RTL: Right) -->
-                    <div class="order-2 md:order-1 text-right md:text-right space-y-8">
-                        <h1 class="text-5xl md:text-7xl font-extrabold leading-snug max-w-4xl">
-                            أصول رقمية حصرية تفوق توقعاتك الاستثمارية!
-                        </h1>
-                        
-                        <h2 class="text-xl md:text-2xl font-semibold text-orange-400">
-                            أنا بن طاهر محمد
-                        </h2>
-                        <p class="text-lg text-white/90 max-w-xl leading-relaxed">
-                            أساعد رواد الأعمال والمستثمرين والشركات على اكتشاف القيمة الحقيقية لأسماء النطاقات. بخبرة سنوات في استثمار وبيع النطاقات والتسويق الرقمي، أتخصص في تحديد الأصول الرقمية عالية القيمة وتحويلها إلى فرص ربح.
-                        </p>
-                        
-                        <!-- Dual CTA Buttons (Matching video style) -->
-                        <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-start">
-                             <!-- Primary CTA (Solid Orange) -->
-                            <a href="#contact" class="w-full sm:w-auto inline-block px-10 py-4 bg-orange-600 text-white rounded-xl font-bold hover:bg-orange-700 transition-all shadow-lg">
-                                اطلب تقييم نطاق مجاني
-                            </a>
-                            <!-- Secondary CTA (Outline/Ghost) -->
-                            <a href="#marketplace" class="w-full sm:w-auto inline-block px-10 py-4 text-white border-2 border-white/50 rounded-xl font-bold hover:border-white transition-all">
-                                تصفح محفظة النطاقات
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- SUCCESS/GROWTH Graphic Column (RTL: Left) -->
-                    <div class="order-1 md:order-2 flex justify-center md:justify-start min-h-[350px]">
-                        <div class="relative w-full max-w-sm h-full flex items-center justify-center">
-                            <!-- Success/Growth Graphic (Stylized Chart and Star/Trophy) -->
-                            <div class="p-8 bg-slate-700/50 rounded-3xl w-full h-full flex flex-col items-center justify-center space-y-4 shadow-2xl shadow-black/50">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500">
-                                    <polyline points="22 12 16 12 14 6 10 18 8 12 2 12"/>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="#f97316" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500">
-                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
-                                </svg>
-                                <p class="text-xl font-bold text-white mt-4">نحو أعلى مستويات الأداء</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- TRUST/LOGOS SECTION (Matching Video) -->
-            <section class="py-16 bg-white border-b border-slate-100">
-                <div class="max-w-7xl mx-auto px-4 text-center">
-                    <h2 class="text-3xl font-bold mb-12 text-slate-700">
-                        موثوق بنا من قبل محترفين في شركات رائدة
-                        <span class="block w-24 h-1 bg-orange-600 mx-auto mt-2"></span>
-                    </h2>
-                    
-                    <!-- LOGO PLACEHOLDER GRID: Replace with actual image logos in production -->
-                    <div class="grid grid-cols-3 md:grid-cols-6 gap-8 opacity-60 max-w-5xl mx-auto">
-                        <div class="h-16 bg-slate-100 flex items-center justify-center text-xs font-bold text-slate-500">LOGO 1</div>
-                        <div class="h-16 bg-slate-100 flex items-center justify-center text-xs font-bold text-slate-500">LOGO 2</div>
-                        <div class="h-16 bg-slate-100 flex items-center justify-center text-xs font-bold text-slate-500">LOGO 3</div>
-                        <div class="h-16 bg-slate-100 flex items-center justify-center text-xs font-bold text-slate-500">LOGO 4</div>
-                        <div class="h-16 bg-slate-100 flex items-center justify-center text-xs font-bold text-slate-500">LOGO 5</div>
-                        <div class="h-16 bg-slate-100 flex items-center justify-center text-xs font-bold text-slate-500">LOGO 6</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- METRICS/STATS SECTION (Matching Video) -->
-            <section class="py-20 bg-slate-50">
-                <div class="max-w-4xl mx-auto px-4 grid grid-cols-3 gap-8 text-center">
-                    <div>
-                        <div class="text-6xl font-extrabold text-slate-900">120+</div>
-                        <p class="text-slate-500 text-lg mt-2">عملية وساطة ناجحة</p>
-                    </div>
-                    <div>
-                        <div class="text-6xl font-extrabold text-slate-900">7<span class="text-accent-orange">+</span></div>
-                        <p class="text-slate-500 text-lg mt-2">سنوات خبرة في المجال</p>
-                    </div>
-                    <div>
-                        <div class="text-6xl font-extrabold text-slate-900">4.9<span class="text-slate-400 text-3xl">/5</span></div>
-                        <p class="text-slate-500 text-lg mt-2">متوسط تقييمات العملاء</p>
-                        <div class="flex justify-center mt-2">
-                             <!-- Star Rating (Visual only) -->
-                            <span class="text-green-500">★★★★★</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SERVICES/VALUE PROPOSITION SECTION (Simplified) -->
-            <section id="services" class="py-24 max-w-7xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-extrabold mb-4">خدمات النطاقات المتكاملة</h2>
-                    <p class="text-lg text-slate-600 max-w-3xl mx-auto">خبرة متخصصة تضمن لك أفضل صفقة استثمارية.</p>
-                    <div class="w-20 h-1.5 bg-orange-600 mx-auto rounded-full mt-4"></div>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Feature 1: Valuation -->
-                    <div class="p-8 bg-slate-50 rounded-3xl card-hover border border-transparent hover:border-orange-200 text-center">
-                        <div class="text-4xl mb-4 text-orange-600 mx-auto">💰</div>
-                        <h3 class="text-xl font-bold mb-3">تقييم دقيق</h3>
-                        <p class="text-slate-500">نستخدم أدوات ذكاء اصطناعي وخبرة بشرية لتحديد القيمة السوقية الحقيقية لنطاقك.</p>
-                    </div>
-                    <!-- Feature 2: Acquisition/Negotiation -->
-                    <div class="p-8 bg-slate-50 rounded-3xl card-hover border border-transparent hover:border-orange-200 text-center">
-                        <div class="text-4xl mb-4 text-orange-600 mx-auto">🤝</div>
-                        <h3 class="text-xl font-bold mb-3">وساطة احترافية</h3>
-                        <p class="text-slate-500">نتولى المفاوضات المعقدة لضمان الحصول على النطاق بأفضل سعر وفي سرية تامة.</p>
-                    </div>
-                    <!-- Feature 3: Education/Coaching -->
-                    <div class="p-8 bg-slate-50 rounded-3xl card-hover border border-transparent hover:border-orange-200 text-center">
-                        <div class="text-4xl mb-4 text-orange-600 mx-auto">🧠</div>
-                        <h3 class="text-xl font-bold mb-3">تدريب واستشارات</h3>
-                        <p class="text-slate-500">دورات واستشارات مكثفة لتمكينك من دخول عالم استثمار النطاقات باحترافية.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- TESTIMONIALS SECTION (Based on video's horizontal slider) -->
-            <section id="testimonials" class="py-24 bg-white">
-                <div class="max-w-7xl mx-auto px-4">
-                    <div class="text-center mb-16">
-                        <h2 class="text-4xl font-extrabold mb-4">آراء العملاء</h2>
-                        <p class="text-lg text-slate-600 max-w-3xl mx-auto">ما يقوله العملاء الذين استثمروا في النطاقات معنا.</p>
-                    </div>
-                    
-                    <!-- Testimonial Grid (Simplified from horizontal slider) -->
-                    <div class="grid md:grid-cols-3 gap-8">
-                        
-                        <div class="p-6 border border-slate-200 rounded-xl shadow-md card-hover">
-                            <div class="text-yellow-500 mb-3">★★★★★</div>
-                            <h4 class="font-bold text-slate-800 mb-2">محمد الجبالي</h4>
-                            <p class="text-sm text-slate-600 mb-4">عملية استحواذ نطاق ناجحة</p>
-                            <p class="text-slate-700 text-base leading-relaxed">
-                                "خبرة بن طاهر محمد في التفاوض لا تقدر بثمن. حصلت على النطاق الذي أردته لأعمالي بأقل من السعر المتوقع. أنصح بالتعامل معه."
-                            </p>
-                        </div>
-
-                        <div class="p-6 border border-slate-200 rounded-xl shadow-md card-hover">
-                            <div class="text-yellow-500 mb-3">★★★★★</div>
-                            <h4 class="font-bold text-slate-800 mb-2">سارة القاسم</h4>
-                            <p class="text-sm text-slate-600 mb-4">استشارة لتقييم محفظة</p>
-                            <p class="text-slate-700 text-base leading-relaxed">
-                                "الاستشارة كانت شاملة وموجهة بشكل استراتيجي. ساعدني في تحديد النطاقات الواعدة في محفظتي لتوجيه استثماراتي بشكل صحيح."
-                            </p>
-                        </div>
-
-                        <div class="p-6 border border-slate-200 rounded-xl shadow-md card-hover">
-                            <div class="text-yellow-500 mb-3">★★★★★</div>
-                            <h4 class="font-bold text-slate-800 mb-2">أحمد منصور</h4>
-                            <p class="text-sm text-slate-600 mb-4">بيع نطاق مميز</p>
-                            <p class="text-slate-700 text-base leading-relaxed">
-                                "أنهى عملية بيع نطاقي في وقت قياسي وبسعر ممتاز. الاحترافية والسرعة في التعامل هي ما يميز فريق بن طاهر محمد."
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- CONTACT SECTION -->
-            <section id="contact" class="pb-24 px-4 max-w-4xl mx-auto">
-                <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-orange-100 border border-slate-100">
-                    <div class="text-center mb-10">
-                        <h2 class="text-3xl font-bold mb-2">احجز استشارة شخصية مع بن طاهر محمد</h2>
-                        <p class="text-slate-500">املأ النموذج، وسنتواصل معك لترتيب موعدك.</p>
-                    </div>
-                    <form id="contact-form" class="space-y-6" onsubmit="handleContact(event)">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-bold text-slate-700 mb-2">الاسم</label>
-                                <input type="text" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-4 outline-none focus:border-orange-600 transition-all">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-bold text-slate-700 mb-2">رقم الهاتف / واتساب</label>
-                                <input type="tel" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-4 outline-none focus:border-orange-600 transition-all">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-bold text-slate-700 mb-2">ما هو اهتمامك الرئيسي؟</label>
-                            <select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-4 outline-none focus:border-orange-600 transition-all">
-                                <option>طلب استشارة مدفوعة</option>
-                                <option>الاستحواذ على نطاق معين</option>
-                                <option>عرض نطاق للبيع</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="w-full py-5 bg-orange-600 text-white rounded-2xl font-bold text-lg hover:bg-orange-700 transition-all shadow-lg shadow-orange-200">
-                            إرسال الطلب وحجز الموعد
-                        </button>
-                    </form>
-                    <div id="form-success" class="hidden text-center py-10">
-                        <div class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-2">تم حجز الطلب!</h3>
-                        <p class="text-slate-500">سيتم التواصل معك لترتيب الموعد النهائي عبر الواتساب قريباً جداً.</p>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- FOOTER -->
-        <footer class="bg-slate-900 py-12 border-t border-slate-700 text-white">
-            <div class="max-w-7xl mx-auto px-4 text-center">
-                <p class="text-slate-400 font-medium">© 2026 جميع الحقوق محفوظة لـ <span class="font-bold">بن طاهر محمد</span></p>
-            </div>
-        </footer>
-    </div>
-
+    <title>Eco-CRM | إدارة النفايات الذكية</title>
+    
+    <!-- خطوط جوجل: Inter (لأنه خط عصري ويدعم العربية بشكل جيد في المتصفحات الحديثة) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- ربط ملف التصميم -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- كود Chatwoot - يجب استبدال YOUR_TOKEN و BASE_URL بقيمك الفعلية -->
+    <!-- يفضل وضعه هنا ليتم تحميله في البداية -->
     <script>
-        // معالجة نموذج التواصل
-        function handleContact(e) {
-            e.preventDefault();
-            // In a real application, you would send data via fetch/XMLHttpRequest here.
-            document.getElementById('contact-form').classList.add('hidden');
-            document.getElementById('form-success').classList.remove('hidden');
-        }
+      // دالة لفتح الشات (ستستخدم في زر الـ CTA)
+      function openChat() {
+          if (window.chatwootSDK && window.$chatwoot) {
+              window.$chatwoot.toggle();
+              console.log("Chatwoot widget toggled.");
+          } else {
+              // fallback أو تنبيه في حال لم يتم تحميل الشات
+              alert("نظام المحادثة قيد التحميل، يرجى المحاولة بعد ثوانٍ.");
+          }
+      }
 
-        // سكريبت Chatwoot (Preserved from original)
-        (function(d,t) {
-            var BASE_URL="https://chatwoot.panel.oneveri.com";
-            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=BASE_URL+"/packs/js/sdk.js";
-            g.async = true;
-            s.parentNode.insertBefore(g,s);
-            g.onload=function(){
-                window.chatwootSDK.run({
-                    websiteToken: '1scxDScNXpdAgE6p4Wzcy9zS',
-                    baseUrl: BASE_URL
-                })
-            }
-        })(document,"script");
+      (function(d,t) {
+        // *** قم بتحديث هذا الرابط إلى رابط Chatwoot الخاص بك ***
+        var BASE_URL="https://chat.yourdomain.com"; 
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            // *** قم بتحديث هذا التوكن إلى التوكن الخاص بمتجرك ***
+            websiteToken: 'YOUR_TOKEN',
+            baseUrl: BASE_URL,
+            // تحديد اللغة والاتجاه لضمان تجربة عربية صحيحة
+            launcherTitle: 'تحدث معنا',
+            locale: 'ar',
+          })
+        }
+      })(document,"script");
     </script>
+</head>
+<body>
+
+    <!-- 1. شريط التنقل (Navigation Bar) -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Eco-CRM</span>
+                <span class="tagline">لإدارة النفايات</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#hero">الرئيسية</a>
+                <a href="#solution">الحل</a>
+                <a href="#contact" class="btn-primary">💬 تحدث معنا</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. قسم البطل (Hero Section) -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">إدارة نفايات ذكية... <span class="highlight">بدون مكالمات ولا فوضى</span></h1>
+            <p class="hero-subtitle">
+                نظام CRM مدعوم بالذكاء الاصطناعي يستقبل طلبات جمع النفايات 24/7، ويحولها إلى مهمة مُجدولة ومؤكدة بشكل آلي.
+            </p>
+            <button onclick="openChat()" class="btn-cta">
+                💬 تحدث معنا الآن لطلب الخدمة
+            </button>
+            <div class="hero-visual">
+                <span role="img" aria-label="Recycle Icon">♻️</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. مشكلة العميل (Pain Section) -->
+    <section class="pain-section">
+        <div class="container">
+            <h2 class="section-title">هل تعاني من تحديات الإدارة التقليدية؟</h2>
+            <div class="pain-cards">
+                <div class="card pain-card">
+                    <span class="icon">📞</span>
+                    <h3>مكالمات لا تتوقف</h3>
+                    <p>فريق خدمة العملاء منهك بالردود المتكررة على نفس الاستفسارات طوال اليوم.</p>
+                </div>
+                <div class="card pain-card">
+                    <span class="icon">📉</span>
+                    <h3>طلبات تضيع وتُنسى</h3>
+                    <p>فقدان بعض طلبات الجمع بسبب التسجيل اليدوي أو سوء التواصل الداخلي.</p>
+                </div>
+                <div class="card pain-card">
+                    <span class="icon">⏱️</span>
+                    <h3>رد متأخر وغير احترافي</h3>
+                    <p>تأخر الرد على العملاء خارج أوقات العمل الرسمية، مما يقلل من جودة الخدمة.</p>
+                </div>
+                <div class="card pain-card">
+                    <span class="icon">😠</span>
+                    <h3>عملاء غير راضين</h3>
+                    <p>الشعور بأن النظام غير متطور وعدم القدرة على تلبية الطلبات بسرعة وكفاءة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. الحل والنظام (Solution Section) -->
+    <section id="solution" class="solution-section">
+        <div class="container">
+            <h2 class="section-title text-white">الحل: نظام CRM ذكي متكامل</h2>
+            <div class="solution-cards">
+                <div class="card solution-card">
+                    <span class="icon">🤖</span>
+                    <h3>وكيل آلي 24/7</h3>
+                    <p>روبوت محادثة مدعوم بالـ AI يستقبل الطلبات ويؤكدها دون تدخل بشري.</p>
+                </div>
+                <div class="card solution-card">
+                    <span class="icon">⚙️</span>
+                    <h3>أتمتة الطلبات</h3>
+                    <p>تحويل المحادثة المسجلة مباشرة إلى مهمة مُجدولة في نظام إدارة المهام (n8n).</p>
+                </div>
+                <div class="card solution-card">
+                    <span class="icon">🌐</span>
+                    <h3>واجهة احترافية</h3>
+                    <p>موقع هبوط عصري (Landing Page) ليعكس صورة مؤسسية متقدمة لشركتكم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. كيف يعمل النظام؟ (How It Works) -->
+    <section class="steps-section">
+        <div class="container">
+            <h2 class="section-title">كيف يعمل نظامنا؟ (3 خطوات بسيطة)</h2>
+            <div class="steps-flow">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>دخول العميل</h3>
+                    <p>يدخل العميل إلى موقعكم ويضغط على زر "تحدث معنا".</p>
+                </div>
+                <span class="flow-arrow">←</span>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>التحدث مع البوت</h3>
+                    <p>يرد البوت فوراً ويسجل نوع وموقع وزمن طلب الجمع.</p>
+                </div>
+                <span class="flow-arrow">←</span>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>التسجيل الآلي</h3>
+                    <p>يتم تحويل المحادثة إلى طلب مؤكد ومُجدول في نظامكم دون تدخل بشري.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 6. القسم النهائي للدعوة للعمل (Final CTA Section) -->
+    <section id="contact" class="final-cta-section">
+        <div class="container">
+            <h2 class="final-cta-title">هل أنت جاهز لنظام عمل ذكي ومؤتمت؟</h2>
+            <p class="final-cta-subtitle">
+                توقف عن هدر الوقت والمال في المكالمات. اطلب نظام Eco-CRM الآن لبدء التحول الرقمي.
+            </p>
+            <button onclick="openChat()" class="btn-cta final-btn">
+                🚀 اطلب الخدمة الآن وابدأ الأتمتة
+            </button>
+        </div>
+    </section>
+
+    <!-- 7. التذييل (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Eco-CRM. جميع الحقوق محفوظة. <span class="tagline">لإدارة النفايات الذكية</span></p>
+            <p>البريد الإلكتروني: info@eco-crm.com</p>
+        </div>
+    </footer>
+
+    <!-- ربط ملف JavaScript (لمجرد الترتيب، لكن جميع الدوال الضرورية بالأعلى) -->
+    <script src="script.js"></script>
+
 </body>
 </html>
